@@ -46,7 +46,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* This code is added meanwhile the logo design is decide*/
+/* This code is added until the logo design is decide*/
 
 .logo {
   font-size: 1.875rem;
@@ -59,10 +59,12 @@ body {
   margin-bottom: 20px;
 }
 
-.welcome-login h1 {
+/* You can move Welcome Lifter! to the left with the code below */
+
+/*.welcome-login h1 {
   margin-bottom: 10px;
   margin-right: 260px;
-}
+}*/
 
 /*Login section*/
 
@@ -93,7 +95,7 @@ body {
   margin-bottom: 5px;
 }
 
-button {
+.button {
   width: 100%;
   padding: 10px 0;
   display: flex;
@@ -111,4 +113,24 @@ button {
 button:hover {
   background-color: #c92561;
   transition: 0.5s;
+}
+
+@media (max-width: 998px) {
+  .container {
+    display: grid;
+    width: 100%;
+  }
+  .login {
+    margin-bottom: 50px;
+  }
+  .welcome-login {
+    font-size: 14px;
+  }
+  .welcome-login h1 {
+    margin-bottom: 10px;
+  }
+  .button {
+    margin-top: -20px;
+    font-size: 19px;
+  }
 }
